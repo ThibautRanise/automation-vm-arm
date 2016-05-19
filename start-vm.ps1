@@ -2,19 +2,19 @@
 	(		
 	    [Parameter(Mandatory=$true)]
 	    [string]
-		$azureAccountName,
+	    $azureAccountName,
 			
-		[Parameter(Mandatory=$true)]
+	    [Parameter(Mandatory=$true)]
 	    [string]
-		$Password,
+	    $Password,
 			
-		[Parameter(Mandatory=$true)]
+	    [Parameter(Mandatory=$true)]
 	    [string]
-		$rgName,
+	     $rgName,
 			
-		[Parameter(Mandatory=$true)]
+	    [Parameter(Mandatory=$true)]
 	    [string]
-		$vmName
+	    $vmName
 	)
 	
 	$azurePassword = ConvertTo-SecureString $Password -AsPlainText -Force
